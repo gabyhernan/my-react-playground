@@ -1,0 +1,23 @@
+.container__pics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+
+  .background__person_container{
+
+  }
+
+.background__person_image{
+}
+
+.background__person_name {
+  margin: 0;
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 1.3rem;
+  padding: 0 0 0.5rem 0;
+}
+.background__title {
+  text-align: center;
+}
