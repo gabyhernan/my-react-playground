@@ -1,7 +1,7 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import {authReducer} from '../reducers/auth';
-
+import {counterReducer} from '../reducers/counter';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
@@ -9,12 +9,14 @@ export default () => {
   const store = createStore(
   combineReducers({ // combineRedcuers takes an argument which is an object
   // the key is going to be the root state name
-auth: authReducer
+auth: authReducer,
+count: counterReducer
   }),  // & the value is going to be the reducer that is supposed to manage that
 // & by using combineReducer we are notputting our object or array on the root
 // we are putting the array on the expenses property
 composeEnhancers(applyMiddleware(thunk))
   );
+
   return store;
 };
 
@@ -25,5 +27,5 @@ composeEnhancers(applyMiddleware(thunk))
 // as opposed to one gigantic reducer you can have multiple smaller ones
 // const store = createStore(expensesReducer);
 
-// set up store configuration
+
 

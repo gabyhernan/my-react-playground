@@ -10,7 +10,7 @@ export default class Background extends React.Component {
   }
 
   componentDidMount() {
-    fetch('https://randomuser.me/api/?results=497&gender=female')
+    fetch('https://randomuser.me/api/?results=200')
     .then( (results) => {
       return results.json();
     }).then( (data) => {

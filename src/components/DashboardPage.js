@@ -2,7 +2,7 @@ import React from 'react';
 import Background from './Background';
 
 const DashboardPage = (props) => (
-  <div class="page-container">
+  <div className="page-container">
   <Background />
   </div>
   );

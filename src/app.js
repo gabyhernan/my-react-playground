@@ -14,7 +14,6 @@ import LoadingPage from './components/LoadingPage';
 
 const store = configureStore();
 
-// use connect for every single component that needs to connect to the Redux store
 
 // React-redux library
 // we are going to be using <Provider store> once at the root of our application
